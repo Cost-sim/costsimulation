@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <meta charset="utf-8">
+  
+  <head>
+    <!-- ヘッダー -->
+    <title>コストシミュレーション</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <div id="wrap">
+      <header><a href="https://www.tokai-corp.com/" target="_blank"><img class="logo" src="logo_Nexsurg.png" alt=""/></a>
+      <p><a href="https://www.tokai-corp.com/nexsurg/" target="_blank">→戻る</a></p>
+      </header>
+    <!-- シミュレーション -->
+    <div id="box">
+      
+      <div class="radio">
+        <legend class="info"><img src="calc.png" width="50px" height="60px"/>コストシミュレーション
+        </legend><br>
+        
+        <input type="radio" name="kit" value="2000"> 白内障キットA
+        <input type="radio" name="kit" value="3000"> 白内障キットB
+        <input type="radio" name="kit" value="4000"> 白内障キットC
+        
+      </div>
+      <div class="container">
+        <div class="input-area">
+          <input type="text" id="price"  pattern=”\d*” placeholder="納入金額">
+          <input type="text" id="num" pattern=”\d*” placeholder="年間のご使用数">
+          
+          <div id="btn" class="disabled">計算</div>
+        </div>
+        <div class="result-area">
+          <p id="result">ここに結果を表示します</p><br>
+          <div id="reset" class="hidden">もう一度計算する</div>
+        </div>
+      </div>
+    </div>
+      
+    <script src="JS/main.js"></script>
+    <!-- //問合せフォーム   -->
+    <div id="formm"> 
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdhK_rJNXhrOd9pHXRWiix5bu4jh_MKFFSPyyVsUV2CVUSr4Q/formResponse" target="_self" method="POST" id="mG61Hd">
+  
+        <ul>
+          <li class="info"><img src="mail.png" width="50px" height="40px">お問合せはこちらから</li>
+          <li>
+            施設名
+            <input name="entry.1653872762" type="text" required="required" id="textfield" class="g_form" placeholder="施設名">
+          </li>
+          <li>
+            <label for="textfield2">お名前</label>
+            <input name="entry.400825443"type="text" required="required" class="g_form" id="textfield2" placeholder="お名前">
+          </li>
+          <li>
+            <label for="textfield3">メールアドレス</label>
+            <input name="entry.559715713" type="text" required="required" class="g_form" id="textfield3" placeholder="メールアドレス">
+          </li>
+          <li>
+            <label for="textfield4">電話</label>
+            <input name="entry.37678010" type="text" class="g_form" id="textfield4"placeholder="電話番号">
+          </li>
+          <li><legend>ご使用のキット</legend></li>
+         <li>
+           <input name="entry.1062445803" type="radio" required="required" class="radio_g" id="radio1" value="白内障キットA"><label for="radio1">白内障キットA</label>
+          <input name="entry.1062445803" type="radio" required="required" class="radio_g" id="radio2" value="白内障キットB"><label for="radio2">
+             白内障キットB</label>
+             <label><input name="entry.1062445803" type="radio" required="required" class="radio_g" id="radio3" value="白内障キットC" ><label for="radio3">
+            白内障キットC</label>
+          </li>
+          
+          <li>
+            <label for="textfield5">納入金額</label>
+            <input name="entry.1759657974" type="text" required="required" class="g_form" id="textfield5" placeholder="納入金額">
+          </li>
+          <li>
+            <label for="textfield6">年間のご使用数</label>
+            <input name="entry.193072250" type="text" required="required" class="g_form" id="textfield6"  placeholder="年間のご使用数">
+          </li>
+          <li>その他お問い合わせ等<textarea name="entry.1315024922"  class="g_form_text" id="entry.952897594"
+            placeholder="その他お問い合わせ"></textarea>
+        </li>
+        <li><input type="submit" class="btbt"></li>
+        </ul>
+      
+      </form>
+      </div>
+  </body>
+    </html>

@@ -1,0 +1,94 @@
+
+body {
+  background: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-image: url(../BG_グラデ.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+  
+}
+.info  {
+  font-size: 25px;
+  text-align:center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:flex-start;
+  color: #f8f8f8;
+}
+
+.radio{
+  width: 500px;
+  margin: 25px auto;
+
+}
+.container {
+  width: 500px;
+  margin: 25px auto;
+
+}
+
+#price,
+#num
+ {
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  width: 125px;
+}
+
+
+#btn{
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 220px;
+  height: 40px;
+  padding: 10px;
+  background: #3897fd;
+  border-radius:5px ;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+}
+
+.input-area{
+  font-size: 0;
+  margin-bottom: 20px;
+}
+
+.result-area{
+  background: #f8f8f8;
+  padding: 10px;
+  height: 130px;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 50px;
+ 
+  font-size: 30px;
+  line-height: 130px;
+}
+
+#result{
+  margin: 0;
+}
+
+#reset{
+  text-decoration: underline;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#btn.disabled{
+  opacity: 0.5;
+}
+#reset.hidden{
+  display: none;
+}
