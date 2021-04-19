@@ -15,17 +15,17 @@
     <div id="box">
       
       <div class="radio">
-        <legend class="info"><img src="calc.png" width="50px" height="60px"/>コストシミュレーション
+        <legend class="info"><img src="calc.png" width="50px" height="60px"/>コストシミュレーション　
         </legend><br>
         <h1>①　ご使用のキットに近いものを選択して下さい</h1>
-        <input type="radio" name="kit" value="2000"> 白内障キットA
-        <input type="radio" name="kit" value="3000"> 白内障キットB
-        <input type="radio" name="kit" value="4000"> 白内障キットC
+        <input type="radio" name="kit" id="radio1" value="2000"> 白内障キットA
+        <input type="radio" name="kit" id="radio2"value="3000"> 白内障キットB
+        <input type="radio" name="kit"id="radio3" value="4000"> 白内障キットC
         
       </div>
       <div class="container">
         <div class="input-area">
-          <h1>②　現在の納入金額/年間のご使用数をご入力下さい</h1>
+          <h1>②　納入金額・年間のご使用数をご入力下さい</h1>
           <input type="number" id="price"  pattern=”\d*” placeholder="納入金額">
           <input type="number" id="num" pattern=”\d*” placeholder="年間のご使用数">
           
@@ -44,7 +44,8 @@
       <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdhK_rJNXhrOd9pHXRWiix5bu4jh_MKFFSPyyVsUV2CVUSr4Q/formResponse" target="_self" method="POST" id="mG61Hd">
   
         <ul>
-          <li class="info"><img src="mail.png" width="50px" height="40px">お問合せはこちらから</li>
+          <li class="info"><img src="mail.png" width="50px" height="40px">お問合せはこちらのフォームから</li>
+          <li class="info">もしくはお電話で：045-933-2244</li>
           <li>
             施設名
             <input name="entry.1653872762" type="text" required="required" id="textfield" class="g_form" placeholder="施設名">
