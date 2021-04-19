@@ -42,11 +42,17 @@ const op_many=1000
           str=(price.value-selectedKit*1.3)*num.value;//OP500以下の場合:1.3倍の単価
         }else{
           str=(price.value-selectedKit)*num.value;
+      
         }
-        result.textContent=str;
+
+        if(str<1){
+          result.textContent="下記のフォームより試算させて頂きます。"
+        }else{
+          result.textContent='コスト削減額は　'+str.toLocaleString() +' 円です';
+        }
         reset.classList.remove('hidden');
-        document.getElementById("textfield5").value=price.value //フォームに納入金額を
-        document.getElementById("textfield6").value=num.value //フォームに納入金額を
+        document.getElementById("textfield5").value=price.value //フォームに納入金額を代入
+        document.getElementById("textfield6").value=num.value //フォームに納入金額を代入
 
         
         // 1秒後にメッセージを表示
@@ -54,13 +60,15 @@ const op_many=1000
           alert('コスト試算頂きありがとうございます!下記のフォームからお問合せ頂けます。');
         },1000);
         setTimeout(() => {
-          scrollTo(0,400);
+          scrollTo(0,410);
+          document.getElementById("textfield").focus();
         }, 3000);
+
     }
     });    
   });
     
-  // リセットボタン
+  // リセットボタン （機能させてない）
     reset.addEventListener('click', function() {
       result.textContent = 'ここに結果を表示します';
       price.value = '';
