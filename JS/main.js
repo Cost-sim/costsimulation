@@ -64,13 +64,13 @@ const op_many=1000
         setTimeout(()=>{
           alert('コスト試算頂きありがとうございます!下記のフォームからお問合せ頂けます。');
         },1000);
-        setTimeout(() => {
-          scrollTo({
-            top:100,
-            left:0,
-            behavior:'smooth'});
-          document.getElementById("textfield").focus();
-        }, 3000);
+        // setTimeout(() => {
+        //   scrollTo({
+        //     top:100,
+        //     left:0,
+        //     behavior:'smooth'});
+        //   document.getElementById("textfield").focus();
+        // }, 3000);
 
     }
     });    
