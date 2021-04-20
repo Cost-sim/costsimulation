@@ -14,6 +14,7 @@ h1{
   text-align:start;
   color:#0e71f3
 }
+
 .info  {
   font-size: 20px;
   text-align:center;
@@ -23,7 +24,12 @@ h1{
   align-items:flex-start;
   color: #f8f8f8;
 }
-
+.info2{
+  font-size: 15px;
+  text-align: end;
+  font-weight: bold;
+  color: #f8f8f8;
+}
 .radio{
   width: 100%;
 
@@ -37,6 +43,7 @@ h1{
 #radio2,
 #radio3{
 cursor: pointer;
+margin: 10px;
 
 }
 
@@ -58,7 +65,7 @@ cursor: pointer;
   cursor: pointer;
   display: inline-block;
   box-sizing: border-box;
-  width: 26%;
+  width: 99%;
   height: 40px;
   padding: 10px 10px 10px 10px;
   background: #3897fd;
@@ -66,7 +73,7 @@ cursor: pointer;
   font-size: 14px;
   text-align: center;
   color: #fff;
-  margin: 10px auto;
+  margin: 10px auto ;
 }
 
 .input-area{
