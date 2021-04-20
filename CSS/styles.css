@@ -47,7 +47,18 @@ margin: 10px;
 
 }
 
-#price,
+#price
+ {
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  width: 90px;
+}
+
 #num
  {
   font-size: 14px;

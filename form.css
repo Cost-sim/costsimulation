@@ -12,7 +12,7 @@ body{
     padding-bottom: 32px;
     background: rgba(197, 22, 66, 0.1);
     font-weight: bold;
-    width: 280px;
+    width: 230px;
     margin: 25px auto;
     list-style: none;
 }
@@ -23,12 +23,12 @@ body{
     padding-bottom: 32px;
     background: rgba(96, 189, 9, 0.2);
     font-weight: bold;
-    width: 280px;
+    width: 230px;
     margin: 25px auto;
     list-style: none;
 }
 #wrap {
-    padding-bottom: 300px;
+    padding-bottom: 230px;
 }
 
 .g_form {
