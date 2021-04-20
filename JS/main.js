@@ -47,7 +47,8 @@ const op_many=1000
         }
 
         if(str<1){
-          result.textContent="下記のフォームより試算させて頂きます。"
+          result.textContent="申し訳ございません。";
+          result2.textContent ="下記のフォームよりお問合せ下さい。";
         }else{
           result.textContent='コスト削減額は' ;
           setTimeout(()=>{
@@ -64,7 +65,10 @@ const op_many=1000
           alert('コスト試算頂きありがとうございます!下記のフォームからお問合せ頂けます。');
         },1000);
         setTimeout(() => {
-          scrollTo(0,410);
+          scrollTo({
+            top:100,
+            left:0,
+            behavior:'smooth'});
           document.getElementById("textfield").focus();
         }, 3000);
 
