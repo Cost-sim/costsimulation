@@ -86,5 +86,5 @@ const op_many=1000
     
     price.addEventListener('keyup', checkInput);
   num.addEventListener('keyup', checkInput);
-  kits[0].focus();
+  // kits[0].focus();
   })();
