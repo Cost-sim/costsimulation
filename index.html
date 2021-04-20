@@ -14,25 +14,35 @@
     <!-- シミュレーション -->
     <div id="box">
       
+      <legend class="info"><img src="calc.png" width="50px" height="60px"/> &nbsp;&nbsp;コストシミュレーション　
+      </legend><br>
       <div class="radio">
-        <legend class="info"><img src="calc.png" width="50px" height="60px"/>コストシミュレーション　
-        </legend><br>
-        <h1>①　ご使用のキットに近いものを選択して下さい</h1>
-        <input type="radio" name="kit" id="radio1" value="2000"> 白内障キットA
-        <input type="radio" name="kit" id="radio2"value="3000"> 白内障キットB
-        <input type="radio" name="kit"id="radio3" value="4000"> 白内障キットC
+        <h1>①　以下よりご使用のキットに<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;近いものを選択して下さい</h1>
+        <div>
+          <input type="radio" name="kit" id="radio1" value="2000"> 白内障キットA
+        </div>
+        <div>
+          <input type="radio" name="kit" id="radio2"value="3000"> 白内障キットB
+        </div>
+        <div>
+          <input type="radio" name="kit"id="radio3" value="4000"> 白内障キットC
+        </div>
         
       </div>
       <div class="container">
         <div class="input-area">
-          <h1>②　納入金額・年間のご使用数をご入力下さい</h1>
+          <h1>②　現在の納入金額と<br>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;年間のご使用数をご入力下さい</h1>
           <input type="number" id="price"  pattern=”\d*” placeholder="納入金額">
           <input type="number" id="num" pattern=”\d*” placeholder="年間のご使用数">
           
+          <h1>③　計算ボタンを押して<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;結果をご確認頂けます</h1>
           <div id="btn" class="disabled">計算</div>
         </div>
         <div class="result-area">
-          <p id="result">ここに結果を表示します</p><br>
+          <p id="result">ここに結果を表示します</p>
+          <p id="result2"></p>
           <div id="reset" class="hidden"></div>
         </div>
       </div>
@@ -44,8 +54,8 @@
       <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdhK_rJNXhrOd9pHXRWiix5bu4jh_MKFFSPyyVsUV2CVUSr4Q/formResponse" target="_self" method="POST" id="mG61Hd">
   
         <ul>
-          <li class="info"><img src="mail.png" width="50px" height="40px">お問合せはこちらのフォームから</li>
-          <li class="info">もしくはお電話で：045-933-2244</li>
+          <li class="info"><img src="mail.png" width="50px" height="40px">お問合せは<br>こちらのフォームから</li>
+          <li class="info">もしくはお電話下さい<br>：045-933-2244</li>
           <li>
             施設名
             <input name="entry.1653872762" type="text" required="required" id="textfield" class="g_form" placeholder="施設名">
@@ -64,11 +74,15 @@
           </li>
           <li><legend>ご使用のキット</legend></li>
          <li>
-           <input name="entry.1062445803" type="radio" required="required" class="radio_g" id="radio1" value="白内障キットA"><label for="radio1">白内障キットA</label>
-          <input name="entry.1062445803" type="radio" required="required" class="radio_g" id="radio2" value="白内障キットB"><label for="radio2">
-             白内障キットB</label>
-             <label><input name="entry.1062445803" type="radio" required="required" class="radio_g" id="radio3" value="白内障キットC" ><label for="radio3">
-            白内障キットC</label>
+          <div>
+            <input name="entry.1062445803" type="radio" required="required" class="radio_g" id="radio1" value="白内障キットA"><label for="radio1">白内障キットA</label>
+          </div> 
+          <div>
+            <input name="entry.1062445803" type="radio" required="required" class="radio_g" id="radio2" value="白内障キットB"><label for="radio2">白内障キットB</label>
+          </div>
+          <div>
+            <label><input name="entry.1062445803" type="radio" required="required" class="radio_g" id="radio3" value="白内障キットC" ><label for="radio3">白内障キットC</label>
+          </div>
           </li>
           
           <li>

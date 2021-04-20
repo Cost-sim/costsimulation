@@ -5,6 +5,7 @@ let price = document.getElementById('price');
 let num = document.getElementById('num');
 let btn = document.getElementById('btn');
 let result = document.getElementById('result');
+let result2 = document.getElementById('result2');
 let reset = document.getElementById('reset');
 const kits = document.querySelectorAll("div.radio input[name='kit']");
 const op_few=200
@@ -42,13 +43,16 @@ const op_many=1000
           str=(price.value-selectedKit*1.3)*num.value;//OP500以下の場合:1.3倍の単価
         }else{
           str=(price.value-selectedKit)*num.value;
-      
+          
         }
 
         if(str<1){
           result.textContent="下記のフォームより試算させて頂きます。"
         }else{
-          result.textContent='コスト削減額は　'+str.toLocaleString() +' 円です';
+          result.textContent='コスト削減額は' ;
+          setTimeout(()=>{
+            result2.textContent=str.toLocaleString() +' 円です';
+          },500);
         }
         reset.classList.remove('hidden');
         document.getElementById("textfield5").value=price.value //フォームに納入金額を代入
