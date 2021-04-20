@@ -65,8 +65,9 @@ body{
     box-shadow: 2px 2px 3px rgba(0,0,0,0.43);
     color: #FFFFFF;
     line-height: 48px;
-    width: 240px;
+    width: 200px;
     cursor: pointer;
+    height: 50px;
 }
 .radio_g {
     border-radius: 4px;

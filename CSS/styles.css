@@ -20,7 +20,7 @@ h1{
   text-align:center;
   font-weight: bold;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: -evenly;
   align-items:flex-start;
   color: #f8f8f8;
 }

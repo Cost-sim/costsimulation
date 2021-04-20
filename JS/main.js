@@ -47,8 +47,8 @@ const op_many=1000
         }
 
         if(str<1){
-          result.textContent="申し訳ございません。";
-          result2.textContent ="下記のフォームより　お問合せ下さい。";
+          result.textContent="申し訳ございません";
+          result2.textContent ="下記フォームよりお問合せ下さい";
         }else{
           result.textContent='コスト削減額は' ;
           setTimeout(()=>{
