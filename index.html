@@ -8,6 +8,11 @@
     <title>コストシミュレーション</title>
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="form.css">
+    <!-- タップして画像拡大（いじらない＆ヘッダータグに） -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+
   </head>
   <body>
 
@@ -21,10 +26,12 @@
         <h1>①　以下よりご使用のキットに<br>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;近いものを選択して下さい</h1>
         <div>
-          <input type="radio" name="kit" id="radio1" value="2000"> 白内障キットA
+          <input type="radio" name="kit" id="radio1" value="2000">
+          <a href="kit_A.png" data-lightbox="group"> 白内障キットA<img src="kit_A.png" width="230"></a>
+         
         </div>
         <div>
-          <input type="radio" name="kit" id="radio2"value="3000"> 白内障キットB
+          <input type="radio" name="kit" id="radio2"value="3000"> <a href="kit_B.png" data-lightbox="group"> 白内障キットB<img src="kit_B.png" width="230"></a>
         </div>
         <div>
           <input type="radio" name="kit"id="radio3" value="4000"> 白内障キットC
@@ -52,7 +59,7 @@
     <script src="JS/main.js"></script>
     <!-- //問合せフォーム   -->
     <div id="formm"> 
-      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdhK_rJNXhrOd9pHXRWiix5bu4jh_MKFFSPyyVsUV2CVUSr4Q/formResponse" target="_self" method="POST" id="mG61Hd">
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfYoudlXi-gxbmkiOuKX7Pbf3TvCrmoqv6-NIrei_z9IFPeew/formResponse" target="_self" method="POST" id="mG61Hd">
   
         <ul>
           <li class="info"><img src="mail.png" width="36px" height="27px">&nbsp;&nbsp;お問合せフォームから</li>
