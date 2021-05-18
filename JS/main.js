@@ -15,17 +15,17 @@ const op_few=500
 
 
 
-// ただのチェック機能
-  function checkInput() {
-  // /^[1-9][0-9]*$/
-  if ( price.value.match(/^[1-9][0-9]*$/) !== null &&
-    num.value.match(/^[1-9][0-9]*$/) !== null
-  ) {
-    btn.classList.remove('disabled');
-  } else {
-    btn.classList.add('disabled');
-  }
- };
+// // ただのチェック機能
+//   function checkInput() {
+//   // /^[1-9][0-9]*$/
+//   if ( price.value.match(/^[1-9][0-9]*$/) !== null &&
+//     num.value.match(/^[1-9][0-9]*$/) !== null
+//   ) {
+//     btn.classList.remove('disabled');
+//   } else {
+//     btn.classList.add('disabled');
+//   }
+//  };
 
   btn.addEventListener('click', function click()  {
    
@@ -62,7 +62,7 @@ const op_few=500
 
         
         // 1秒後にメッセージを表示
-        setTimeout(()=>{
+        setTimeout(function(){
           alert('コスト試算頂きありがとうございます!下記のフォームからお問合せ頂けます。');
         },1000);
         // setTimeout(() => {
