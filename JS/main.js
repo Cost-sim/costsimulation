@@ -10,22 +10,23 @@ let result2 = document.getElementById('result2');
 let result3 = document.getElementById('result3');
 let reset = document.getElementById('reset');
 const kits = document.querySelectorAll("div.radio input[name='kit']");
+const kitsArr =Array.prototype.slice.call(kits); //キットを配列に変換
 const op_few=500
 
 
 
 
-// // ただのチェック機能
-//   function checkInput() {
-//   // /^[1-9][0-9]*$/
-//   if ( price.value.match(/^[1-9][0-9]*$/) !== null &&
-//     num.value.match(/^[1-9][0-9]*$/) !== null
-//   ) {
-//     btn.classList.remove('disabled');
-//   } else {
-//     btn.classList.add('disabled');
-//   }
-//  };
+// ただのチェック機能
+  function checkInput() {
+  // /^[1-9][0-9]*$/
+  if ( price.value.match(/^[1-9][0-9]*$/) !== null &&
+    num.value.match(/^[1-9][0-9]*$/) !== null
+  ) {
+    btn.classList.remove('disabled');
+  } else {
+    btn.classList.add('disabled');
+  }
+ };
 
   btn.addEventListener('click', function click()  {
    
@@ -34,7 +35,7 @@ const op_few=500
     let str2;
     
     // ラジオボタンの値を取得
-    kits.forEach(function (kit){
+    kitsArr.forEach(function (kit){
       if (kit.checked === true) {
       
         selectedKit = kit.value;
